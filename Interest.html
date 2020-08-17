@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interest</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let deposit = parseFloat(prompt("Nhập số tiền gửi đi anh zai!!"));
+    let months = parseFloat(prompt("Số tháng nữa"));
+    let interest = parseFloat(prompt("Lãi mỗi tháng bao nhiêu??"));
+    let result;
+
+    document.write("Bảng kê tiền lãi sau mỗi tháng:" + "<br>");
+    for (let i = 0; i < months; i++){
+        result = deposit + deposit * interest;
+        deposit = result;
+        document.write("Tháng thứ " + (i+1) + ": " +result + "<br>");
+    }
+</script>
