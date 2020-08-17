@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let number = 0;
+    let result = 0;
+
+    while(number != -1) {
+        number = parseFloat(prompt("Nhập 1 số đi anh zai!!"));
+        if (!isNaN(number)) {
+            result += number
+        }
+        else {
+            alert("Nhập số mà cha nội!!");
+        }
+        document.write(result + "</br>");
+    }
+</script>
