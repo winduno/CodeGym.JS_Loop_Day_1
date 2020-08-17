@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    alert("In ra dãy Fibonacci nhé!!");
+    let number = parseFloat(prompt("Muốn in ra bao nhiêu số anh zai??"));
+
+    let i0 = 1;
+    let i1 = 1;
+    let result = 0;
+    let count = 2;
+    document.write(i0 + " " + i1 + " ");
+
+    if (!isNaN(number)) {
+        while (count < number) {
+            result = i0 + i1;
+            i0 = i1;
+            i1 = result;
+            count++;
+            document.write(result + " ");
+        }
+    }
+    else {
+        alert("Nhập số mà anh zai!!");
+    }
+</script>

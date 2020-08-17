@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TriAngle</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    for (let i = 0; i < 5; i++){
+        for (let j = 0; j <= i; j ++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    for (let i = 0; i < 5; i++){
+        for (let j = 0; j < (5 - i); j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    for (let i = 0; i < 5; i++){
+        for (let j = 0; j < 5; j++){
+            if (j < 4 - i){
+                document.write("&nbsp;");
+            }
+            else {
+                document.write("*");
+            }
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    for (let i = 0; i < 5; i++){
+        for (let j = 5; j > 0; j--){
+           if (j > 5 - i){
+               document.write("&nbsp;");
+           }
+           else{
+               document.write("*");
+           }
+        }
+        document.write("<br>");
+    }
+</script>

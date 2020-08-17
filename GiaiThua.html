@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GiaiThua</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    alert("Tính giai thừa thôi anh em êiiiiiii");
+    let number = parseFloat(prompt("Muốn tính giai thừa bao nhiêu hả anh zai??"));
+    let result = 1;
+    if (Number.isInteger(number)) {
+        for (let i = 2; i <= number; i++) {
+            result *= i;
+        }
+    }
+    else {
+        result = "Nhập số chứ thế này thì chịu rồi";
+    }
+
+    document.write(result);
+    // Tính được 170!, khá to nhề.
+</script>
